@@ -15,12 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         Button addbutton = (Button) findViewById(R.id.addbutton);
         addbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                
                 EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText) ;
                 EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText) ;
                 TextView result= (TextView) findViewById(R.id.result) ;
@@ -35,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
         subbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
+                
                 EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText) ;
                 EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText) ;
                 TextView result= (TextView) findViewById(R.id.result) ;
@@ -53,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText) ;
                 EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText) ;
                 TextView result= (TextView) findViewById(R.id.result) ;
@@ -69,11 +66,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText) ;
                 EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText) ;
                 TextView result= (TextView) findViewById(R.id.result) ;
-
 
                 int num1 = Integer.parseInt(firstNumEditText.getText().toString());
                 int num2 = Integer.parseInt(secondNumEditText.getText().toString());
@@ -82,7 +77,5 @@ public class MainActivity extends AppCompatActivity {
                 result.setText(res + "");
             }
         });
-
-
     }
 }
